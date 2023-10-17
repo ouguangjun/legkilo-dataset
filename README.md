@@ -11,7 +11,7 @@ This is a legged robot dataset containing leg kinematics (joint encoders and con
     <img src="https://github.com/ouguangjun/kilo-dataset/blob/main/figure/sensor.png" alt="drawing" width="600"/>
 </p>
 
-#sequence#
+##sequence##
 - **corridor**: A long corridor with few features and surrounded by  glass windows. The trajectory of the legged robot walking shaped like "8". The end and the beginning of the trajectory coincide.
 - **park**: A semi-open parking lot full of vehicles, where the legged robot walking with dynamic objects (e.g., pedestrians) around it.
 - **indoor**: The robot operating in static, non-uniform indoor environment.
