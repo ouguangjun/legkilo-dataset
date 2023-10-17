@@ -1,4 +1,4 @@
-# leg-fusion-datasetz
+# leg-fusion-dataset
 This is a legged robot dataset containing leg kinematics (joint encoders and contact sesors), imu and lidar.
 
 <p align='center'>
@@ -17,8 +17,28 @@ This is a legged robot dataset containing leg kinematics (joint encoders and con
 - **indoor**: The robot operating in static, non-uniform indoor environment.
 - **running**: The robot running a short but quick circle outside at an average speed of 1.50 m/s.
 
+<p align='center'>
+    <img src="https://github.com/ouguangjun/kilo-dataset/blob/main/figure/dog." alt="drawing" width="600"/>
+</p>
+
 **corridor**
 <p align='center'>
     <img src="https://github.com/ouguangjun/kilo-dataset/blob/main/figure/corridor.gif" alt="drawing" width="600"/>
 </p>
 
+<p align='center'>
+    <img src="https://github.com/ouguangjun/kilo-dataset/blob/main/figure/corridor02.gif" alt="drawing" width="600"/>
+</p>
+
+**park**
+<p align='center'>
+    <img src="https://github.com/ouguangjun/kilo-dataset/blob/main/figure/park01.gif" alt="drawing" width="600"/>
+</p>
+<p align='center'>
+    <img src="https://github.com/ouguangjun/kilo-dataset/blob/main/figure/park02.gif" alt="drawing" width="600"/>
+</p>
+
+**running**
+<p align='center'>
+    <img src="https://github.com/ouguangjun/kilo-dataset/blob/main/figure/running.gif" alt="drawing" width="600"/>
+</p>
