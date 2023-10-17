@@ -1,4 +1,4 @@
-# leg-fusion-dataset
+# kilo-dataset
 This is a legged robot dataset containing leg kinematics (joint encoders and contact sesors), imu and lidar.
 
 <p align='center'>
