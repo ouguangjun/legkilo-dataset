@@ -18,8 +18,13 @@ This is a legged robot dataset containing leg kinematics (joint encoders and con
 - **running**: The robot running a short but quick circle outside at an average speed of 1.50 m/s.
 
 <p align='center'>
-    <img src="https://github.com/ouguangjun/kilo-dataset/blob/main/figure/dog." alt="drawing" width="600"/>
+    <img src="https://github.com/ouguangjun/kilo-dataset/blob/main/figure/dog01.jpg" alt="drawing" width="300"/>
+    <img src="https://github.com/ouguangjun/kilo-dataset/blob/main/figure/dog02.jpg" alt="drawing" width="300"/>
 </p>
+
+
+
+
 
 **corridor**
 <p align='center'>
@@ -42,3 +47,6 @@ This is a legged robot dataset containing leg kinematics (joint encoders and con
 <p align='center'>
     <img src="https://github.com/ouguangjun/kilo-dataset/blob/main/figure/running.gif" alt="drawing" width="600"/>
 </p>
+
+## note
+More information on the dataset will be released as the papers are received
