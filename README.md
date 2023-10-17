@@ -49,4 +49,4 @@ This is a legged robot dataset containing leg kinematics (joint encoders and con
 </p>
 
 ## note
-More information on the dataset will be released as the papers are received
+More information about the dataset will be released as the paper are received.
