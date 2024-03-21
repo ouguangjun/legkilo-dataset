@@ -1,0 +1,5 @@
+<launch>
+
+    <node pkg="kalman_go1" type="pub_highstate" name="pub_highstate" output="screen" />
+
+</launch>

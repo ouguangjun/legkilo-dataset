@@ -1,0 +1,5 @@
+<launch>
+    <rosparam file="$(find kalman_go1)/config/go1.yaml" command="load" />
+    <node pkg="kalman_go1" type="pub_kf" name="pub_kf" output="screen" />
+
+</launch>

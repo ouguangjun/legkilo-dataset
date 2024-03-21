@@ -1,0 +1,50 @@
+go1:
+
+  #topics
+  pointCloudTopic: "/points_raw"
+  imuTopic: "/imu_raw"
+  highStateTopic: "high_state"  # unitree internal feedback sensor information, including encoders, force sensors, etc
+  stateFromUnitree: "state_SDK"   #unitree built-in state estimation
+
+  #extrinsics (lidar -> imu)
+  extrinsicTrans: [ 0.05, 0.0,  -0.09]
+  extrinsicRot: [1, 0, 0,
+                   0, 1, 0,
+                   0, 0, 1]
+  
+  #robot  kinematics
+  NUM_LEG: 4
+  legCalfLength: 0.213
+  legThighLength: 0.213
+  legThighOffset: 0.08
+  legOffsetX: 0.1881
+  legOffsetY: 0.04675
+
+  #bias and noises
+  jointAngleNoise: 1.0e-3
+  jointVelocityNoise: 1.0e-3
+
+  imuGravity: 9.80511 #m/s^2
+  imuAccNoise: 0.04  # accelerometer noise standard deviation 
+  imuAccZNoise: 0.05 #z accelerometer noise standard deviation
+  imuAccBiasNoise: 1.0e-3
+  imuGyrNoise: 9.0e-3
+  imuGyrBiasNoise: 1.0e-3
+
+  #kalman filter
+  PROCESS_NOISE_PIMU: 1.0e-2
+  PROCESS_NOISE_VIMU: 1.0e-2
+  PROCESS_NOISE_PFOOT: 1.0e-2
+  SENSOR_NOISE_PIMU_REL_FOOT: 1.0e-3
+  SENSOR_NOISE_VIMU_REL_FOOT: 0.1
+  SENSOR_NOISE_ZFOOT: 1.0e-3  
+
+
+
+
+  
+
+
+
+
+
