@@ -45,6 +45,9 @@ This is a legged robot dataset containing leg kinematics (joint encoders and con
     <img src="https://github.com/ouguangjun/kilo-dataset/blob/main/figure/running.gif" alt="drawing" width="600"/>
 </p>
 
+### Rosbag Download
+The rosbag for each sequence is provided in link [Google Drive](https://drive.google.com/drive/folders/1Egpj7FngTTPCeQDEzlbiK3iesPPZtqiM?usp=drive_link), which contains the ground truth. We obtain truth values through prior maps or offline optimization methods like [GR-Fusion](https://ieeexplore.ieee.org/abstract/document/9636232). At the same time, in the sequence corridor and slope sequence, the starting point and the ending point coincide, which can be evaluated by end-to-end error.
+
 ## Sensor Information
 ### sensor overview
 
@@ -115,6 +118,36 @@ uint32 reserve
 
 uint32 crc
 ```
+## Sensor Parameter
+For parameters of each sensor, such as external parameters and leg kinematic parameters, please refer to ```config/go1.yaml ```
+
+##  Kinematic-inertial Estimator
+We provide a kinematic-inertial legged state estimation adapted to this dataset, which is derived from [MIT Cheetah 3](https://github.com/mit-biomimetics/Cheetah-Software) and configured by [ ShuoYangRobotics ](https://github.com/ShuoYangRobotics/A1-QP-MPC-Controller?tab=readme-ov-file). On the basis of the above, we added the adaptation of sensor data, and it was verified on Go1.
+
+### Build
+The estimator is tested in Ubuntu 18.04 and ROS1.  Make following command:
+```
+cd catkin_ws/src
+git clone https://github.com/ouguangjun/legkilo-dataset.git
+cd ..
+catkin_make
+```
+### Run
+```
+source devel/setup.bash
+roslaunch kalman_go1 pubLegKF.launch
+```
+and  play rosbag on another terminal
+
+```
+rosbag play corridor.bag
+```
+
+If you want to run this program on your robot, you can call the SDK to publish highstate data:
+```
+roslaunch kalman_go1 pub_highstate.launch
+```
+
 
 
 
