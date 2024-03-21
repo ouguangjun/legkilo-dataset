@@ -52,6 +52,7 @@ This is a legged robot dataset containing leg kinematics (joint encoders and con
     <img src="https://github.com/ouguangjun/kilo-dataset/blob/main/figure/sensor.png" alt="drawing" width="600"/>
 </p>
 
+### sensor type 
 The data set includes liDAR, IMU, joint encoders, contact sensors, etc. Taking the sequence **corridor** as an example, the specific data format types are as follows:
 
 ```
@@ -72,7 +73,9 @@ topics:      /high_state   222039 msgs    : unitree_legged_msgs/HighState
              /points_raw     4421 msgs    : sensor_msgs/PointCloud2      
              /state_SDK    222039 msgs    : nav_msgs/Odometry
 ```
-unitree_legged_msgs/HighState is the sensor feedback type provided by Unitree, which can be easily obtained from the sdk provided by Unitree.
+
+### unitree_legged_msgs/HighState
+unitree_legged_msgs/HighState is the sensor feedback type provided by Unitree, which can be easily obtained from the sdk provided by Unitree. 
 The specific content of highstate is as follows:
 ```
 time stamp                                               #Added a timestamp to the original data format
