@@ -153,7 +153,9 @@ roslaunch kalman_go1 pub_highstate.launch
 In order to better make the open source lidar-based algorithm run better on the dataset, we provide some parameter modification suggestions:
 
 -** A-LOAM**: LOAM is a pure lidar odometry, which is stable in our experiment and rarely has large height fluctuation, but the global error is larger than other LIOs.  Loop close detection can be added to improve the global accuracy, such as [SC-LOAM](https://github.com/gisbi-kim/SC-A-LOAM).
+
 -**LIOSAM**: The vibration or impacts of the legged robot makes the IMU degenerate, while the IMU odometry based on pre-integration in LIOSAM accumulates a large error in a short time. We suggest replacing IMU's odometry with kinematic-inertial odometry provided by us, and adding the leg odometry factor to the factor map, which will greatly improve the accuracy of LIOSAM.
+
 -**FASTLIO ** and **Point-lio**: fastlio and point-lio are algorithms based on Kalman filtering. For IMU observation, the accelerometer covariance can be increased or the error standard deviation of the lidar observation can be reduced. The Point-lio algorithm performs best in our experiment because it uses IMU as a measurement value rather than an input value, which makes it more robust when encountering unstable IMU data.
 
 
