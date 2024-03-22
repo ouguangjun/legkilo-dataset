@@ -128,7 +128,7 @@ This is the built-in IMU of the quadruped robot, which can provide measurement i
 This is a state estimator provided by unitree built-in, possibly a Kalman filter-based leg odometry.
 
 ## Sensor Parameter
-For parameters of each sensor, such as external parameters and leg kinematic parameters, please refer to ```config/go1.yaml ```
+For parameters of each sensor, such as external parameters and leg kinematic parameters, please refer to ```kalman_go1/config/go1.yaml ```
 
 ##  Kinematic-inertial Estimator
 We provide a kinematic-inertial legged state estimation adapted to this dataset, which is derived from [MIT Cheetah 3](https://github.com/mit-biomimetics/Cheetah-Software) and configured by [ ShuoYangRobotics ](https://github.com/ShuoYangRobotics/A1-QP-MPC-Controller?tab=readme-ov-file). On the basis of the above, we added the adaptation of sensor data, and it was verified on Go1.
