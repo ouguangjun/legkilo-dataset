@@ -54,6 +54,7 @@ The rosbag for each sequence is provided in link [Google Drive](https://drive.go
 <p align='center'>
     <img src="https://github.com/ouguangjun/kilo-dataset/blob/main/figure/sensor.png" alt="drawing" width="600"/>
 </p>
+The data publication frequency of the IMU and other kinematic meaurements is 500 Hz. Due to limitations in the SDK provided by the robot manufacturer, we could only achieve an update frequency of 50 Hz, resulting in some data overlap. 
 
 ### sensor type 
 The data set includes liDAR, IMU, joint encoders, contact sensors, etc. Taking the sequence **corridor** as an example, the specific data format types are as follows:
