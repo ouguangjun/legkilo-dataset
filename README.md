@@ -77,8 +77,9 @@ topics:      /high_state   222039 msgs    : unitree_legged_msgs/HighState
              /points_raw     4421 msgs    : sensor_msgs/PointCloud2      
              /state_SDK    222039 msgs    : nav_msgs/Odometry
 ```
-
-### unitree_legged_msgs/HighState
+### /points_raw : sensor_msgs/PointCloud2
+This is the data provided by velodyne VLP16 lidar at roughly 10 HZ.
+### /high_state : unitree_legged_msgs/HighState
 unitree_legged_msgs/HighState is the sensor feedback type provided by Unitree, which can be easily obtained from the sdk provided by Unitree. 
 The specific content of highstate is as follows:
 ```
@@ -119,6 +120,13 @@ uint32 reserve
 
 uint32 crc
 ```
+
+### /imu_raw: sensor_msgs/Imu
+This is the built-in IMU of the quadruped robot, which can provide measurement information of 9-axis (acceleration, angular velocity, quaternion).
+
+### /state_SDK: nav_msgs/Odometry
+This is a state estimator provided by unitree built-in, possibly a Kalman filter-based leg odometry.
+
 ## Sensor Parameter
 For parameters of each sensor, such as external parameters and leg kinematic parameters, please refer to ```config/go1.yaml ```
 
@@ -146,7 +154,7 @@ and  play rosbag on another terminal
 rosbag play corridor.bag
 ```
 
-If you want to run this program on your robot, you can call the SDK to publish highstate data:
+If you want to run this program on your robot, you can call this file to publish highstate data and IMU data:
 ```
 roslaunch kalman_go1 pub_highstate.launch
 ```
