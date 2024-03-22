@@ -128,11 +128,13 @@ We provide a kinematic-inertial legged state estimation adapted to this dataset,
 ### Build
 The estimator is tested in Ubuntu 18.04 and ROS1.  Make following command:
 ```
-cd catkin_ws/src
+cd catkin_ws
 git clone https://github.com/ouguangjun/legkilo-dataset.git
-cd ..
+mv legkilo-dataset src
 catkin_make
 ```
+
+PS: The reason for changing the name of the file is that ```unitree_legged_sdk``` needs to be placed in the ```catkin_ws/src``` directory, you can also put the contents of the legkilo-dataset into the ```src``` directory.
 ### Run
 ```
 source devel/setup.bash
