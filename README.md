@@ -81,6 +81,9 @@ topics:      /high_state   222039 msgs    : unitree_legged_msgs/HighState
 This is the data provided by velodyne VLP16 lidar at roughly 10 HZ.
 ### /high_state : unitree_legged_msgs/HighState
 unitree_legged_msgs/HighState is the sensor feedback type provided by Unitree, which can be easily obtained from the sdk provided by Unitree. 
+
+The original msg does not have timestamp information, in order to synchronize the time of the data, we add a timestamp in the format of "time".
+
 The specific content of highstate is as follows:
 ```
 time stamp                                               #Added a timestamp to the original data format
