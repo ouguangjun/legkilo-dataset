@@ -139,7 +139,7 @@ We provide a kinematic-inertial legged state estimation adapted to this dataset,
 ### Build
 The estimator is tested in Ubuntu 18.04 and ROS1.  Make following command:
 ```
-cd catkin_ws
+cd dataset_ws
 git clone https://github.com/ouguangjun/legkilo-dataset.git
 mv legkilo-dataset src
 catkin_make
