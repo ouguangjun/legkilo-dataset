@@ -101,7 +101,7 @@ IMU imu                                                    # IMU meausrement, in
                                                                     # rpy(float[3]) : [0]:roll, [1]:pitch, [2]:yaw
                                                                     # temperature(int8_t)
 
-MotorState[20] motorState            #The first 12 arrays are valid, representing 12 encoder information FR_{0, 1, 2}, FL_{0, 1, 2}, RR_{0, 1, 2}, RL_{0, 1, 2}
+MotorState[20] motorState            #The first 12 arrays are valid, representing 12 encoder information FR_{0, 1, 2}, FL_{3, 4, 5}, RR_{9, 10, 11}, RL_{6, 7, 8}
                                                                     #every MotorState including:
                                                                     #q: angle (rad)  dq: velocity(rad/s) , etc.
 BmsState bms
