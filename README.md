@@ -13,6 +13,8 @@ This is a legged robot dataset containing leg kinematics (joint encoders and con
 - **indoor**: The robot operating in static, non-uniform indoor environment.
 - **running**: The robot running a short but quick circle outside at an average speed of 1.50 m/s.
 - **slope**: The robot operating in a long slope with height variation (> 6 m). The end and the beginning of the trajectory coincide.
+- **rotation**: The robot rotation in place.
+- **grass**: The robot operating on the grass, where the ground is uneven.
 
 <p align='center'>
     <img src="https://github.com/ouguangjun/kilo-dataset/blob/main/figure/dog01.jpg" alt="drawing" width="300"/>
