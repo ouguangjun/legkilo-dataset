@@ -17,7 +17,9 @@ The related code is released at [Leg-KILO code](https://github.com/ouguangjun/Le
   year={2024},
   volume={9},
   number={10},
-  pages={8194-8201}}
+  pages={8194-8201},
+  publisher={IEEE}}
+
 ```
 
 
