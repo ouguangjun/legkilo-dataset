@@ -5,6 +5,18 @@ This is a legged robot dataset containing leg kinematics (joint encoders and con
     <img src="https://github.com/ouguangjun/kilo-dataset/blob/main/figure/map_dog.jpg" alt="drawing" width="600"/>
 </p>
 
+The paper was published in 2024 IEEE Robotics and Automation Letters (RA-L), "[Leg-KILO](https://ieeexplore.ieee.org/document/10631676): Robust Kinematic-Inertial-Lidar Odometry for Dynamic Legged Robots ".
+
+```
+@ARTICLE{10631676,
+  author={Ou, Guangjun and Li, Dong and Li, Hanmin},
+  journal={IEEE Robotics and Automation Letters}, 
+  title={Leg-KILO: Robust Kinematic-Inertial-Lidar Odometry for Dynamic Legged Robots}, 
+  year={2024},
+  volume={9},
+  number={10},
+  pages={8194-8201}}
+```
 
 
 ## sequence
