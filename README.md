@@ -22,6 +22,12 @@ The related code is released at [Leg-KILO code](https://github.com/ouguangjun/Le
 
 ```
 
+## Rosbag Download
+
+The rosbag for each sequence is provided in link [Google Drive](https://drive.google.com/drive/folders/1Egpj7FngTTPCeQDEzlbiK3iesPPZtqiM?usp=drive_link), which contains the ground truth. [百度网盘](https://pan.baidu.com/s/1ue5_3OwELXK8n7A_I-HWJw?pwd=kilo) is also available.
+
+We obtain truth values through prior maps or offline optimization methods like [GR-Fusion](https://ieeexplore.ieee.org/abstract/document/9636232). At the same time, in the sequence corridor and slope sequence, the starting point and the ending point coincide, which can be evaluated by end-to-end error.
+
 
 ## sequence
 - **corridor**: A long corridor with few features and surrounded by  glass windows. The trajectory of the legged robot walking shaped like "8". The end and the beginning of the trajectory coincide.
@@ -63,8 +69,6 @@ The related code is released at [Leg-KILO code](https://github.com/ouguangjun/Le
     <img src="https://github.com/ouguangjun/kilo-dataset/blob/main/figure/running.gif" alt="drawing" width="600"/>
 </p>
 
-### Rosbag Download
-The rosbag for each sequence is provided in link [Google Drive](https://drive.google.com/drive/folders/1Egpj7FngTTPCeQDEzlbiK3iesPPZtqiM?usp=drive_link), which contains the ground truth. We obtain truth values through prior maps or offline optimization methods like [GR-Fusion](https://ieeexplore.ieee.org/abstract/document/9636232). At the same time, in the sequence corridor and slope sequence, the starting point and the ending point coincide, which can be evaluated by end-to-end error.
 
 ## Sensor Information
 ### sensor overview
