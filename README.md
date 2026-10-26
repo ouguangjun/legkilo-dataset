@@ -28,6 +28,12 @@ The rosbag for each sequence is provided in link [Google Drive](https://drive.go
 
 We obtain truth values through prior maps or offline optimization methods like [GR-Fusion](https://ieeexplore.ieee.org/abstract/document/9636232). At the same time, in the sequence corridor and slope sequence, the starting point and the ending point coincide, which can be evaluated by end-to-end error.
 
+## Dataset License
+
+The Leg-KILO dataset recordings (rosbag files) and ground-truth data distributed through the download links in this README are licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+
+This license applies only to the dataset recordings and ground-truth data. It does not apply to source code, SDKs, or other repository contents.
+
 
 ## sequence
 - **corridor**: A long corridor with few features and surrounded by  glass windows. The trajectory of the legged robot walking shaped like "8". The end and the beginning of the trajectory coincide.
